@@ -1,0 +1,191 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Accenture India Private Limited</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+				<!-- Note: The "styleN" class below should match that of the banner element. -->
+					<header id="header" class="alt style2">
+						<a href="index.html" class="logo"><strong>My Portfolio</strong> <span>By Kedar Amar Nayak</span></a>
+						<nav>
+							<a href="#menu">Menu</a>
+						</nav>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<ul class="links">
+							<li><a href="index.html">Home</a></li>
+							<li><a href="projects.html">Projects</a></li>
+							<li><a href="education.html">Education</a></li>
+							<li><a href="awards.html">Awards and Extra Curricular</a></li>
+							<li><a href="cover.html">Cover Letter</a></li>
+							<!-- <li><a href="connect.html">Let's Connect</a></li> -->
+						</ul>
+					</nav>
+
+				<!-- Banner -->
+				<!-- Note: The "styleN" class below should match that of the header element. -->
+					<section id="banner" class="style2">
+						<div class="inner">
+							<span class="image">
+								<img src="images/pic07.jpg" alt="" />
+							</span>
+							<header class="major">
+								<h1>Accenture India Private Limited</h1>
+							</header>
+							<div class="content">
+								<h3>Clients: A U.S. Media and Technology Multinational Company and an Australian Network service provider Multinational Company.<br/>
+								Products: A Movies and TV series order placing system, A website for a network service provider.</h3>
+							</div>
+							<div class="content">
+								<ul class="actions">
+									<li><a href="#one" class="button next scrolly">Get Started</a></li>
+								</ul>
+							</div>
+						</div>
+					</section>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- One -->
+							<section id="one">
+								<div class="inner">
+									<header class="major">
+										<h2>Roles and Responsibilities</h2>
+									</header>
+									<p>1. My responsibilities involved continuous monitoring of the Service Now platform and the project mailbox, specifically designated for incident-related emails. I was tasked with swiftly identifying and addressing incidents and change requests before they breached the Service Level Agreement. These incidents encompassed various issues such as user password resets, challenges in placing orders, difficulty locating specific orders, and resolving mismatched orders. Change requests were diverse, including tasks such as adding new functionalities to the code, optimizing existing code, and making necessary adjustments in the database or server configurations. Additionally, I managed scheduled downtimes for applying essential software patches on the servers, aiming to proactively prevent potential problems, vulnerabilities, or risks while enhancing overall system performance. It was crucial that these changes were meticulously implemented in a controlled and coordinated manner, aiming to minimize any adverse impact on the existing services and infrastructure. Handling and resolving these requests efficiently were paramount aspects of my role.</p>
+									<p>2. As part of my project responsibilities, I conducted thorough checks on all application servers, including tomcat application servers, proxy servers, load balancers, and web servers. These servers were available across multiple environments, including development, quality assurance, stage, and production. My tasks involved monitoring server logs diligently to identify any error entries. Upon detecting errors, I took immediate and necessary actions to address the issues promptly. I also monitored the Splunk logs, utilizing real-time log monitoring and analysis capabilities to promptly troubleshoot issues like application errors, server malfunctions, and security breaches.</p>
+									<p>3. I was tasked with overseeing the MySQL database, specifically examining the orders table for entries marked as "deleted" or with an "error" status. Following meticulous scrutiny and examination, I was responsible for removing these problematic orders from the database.</p>
+									<p>4. I played a key role in delivering patching support to external project teams during application downtimes. These downtimes were primarily dedicated to installing essential security patches on the servers. Throughout this period, I focused on ensuring timely client updates and optimizing the patching process by offering vital assistance and guidance.</p>
+									<p>5. Built Java and Python automated utilities: </p>
+									<p>I designed a ServiceNow ticket creation tool that operated by monitoring the project mailbox exclusively meant for incidents. Whenever a new email arrived, the tool automatically generated an incident in ServiceNow. This Python-based utility was deployed on the application server and ensured continuous operation via a cron script. By eliminating manual intervention in incident creation, this tool significantly enhanced project efficiency by 15%.</p>
+									<p>I developed a Java automation utility that served as a querying tool to identify and remove invalid data from the database. This utility, deployed on application servers, ran every 15 minutes. It utilized the java.sql package, leveraging interfaces and classes such as Connection for database connection, DriverManager for handling database drivers, PreparedStatement to pass and execute SQL queries, ResultSet for retrieving and storing database results, and SQLException to manage errors. By automating this process, manual intervention time was significantly reduced from approximately 15 minutes to just 3 minutes.</p>
+									<p>I developed a Python utility specifically for password reset or creation, which actively monitored the project mailbox dedicated to incidents. This tool identified emails necessitating password reset or creation and automatically generated a random temporary password following predefined criteria. The utility stored this password in the database's password management table and shared it with users, alongside a predefined password reset link. Users could access the link using their user ID and the newly generated temporary password. By automating this process, manual efforts were entirely eliminated, leading to a 20% reduction in project incidents.</p>
+									<p>I developed a reporting utility to streamline the comparison process between our project's order data and an extensive Excel report provided by backend external teams, known as the project bible. This Excel file contained accurate information about all user-placed orders. Our task was to ensure the database data's accuracy and consistency by aligning it with the details in this report. To automate this task, I created a Java utility that ran twice daily. The utility, once fed with the report, read the file, established a connection with the database (similar to the utility described in point 6.2), compared the orders in the file with the database entries, and made necessary updates. By implementing this automated solution, the utility significantly reduced the team's workload, reducing the processing time from one hour to just 15 minutes while handling a large volume of orders (50000 to 60000 Excel entries).</p>
+									<p>6. I crafted optimized SQL queries, functions, and procedures for the project's application databases whenever necessary. These optimizations were aimed at enhancing the efficiency of the project's database functionalities. </p>
+									<p>7. I configured and implemented cron job scripts on Linux servers to enhance memory usage optimization. These scripts ran hourly, continuously monitoring server space utilization. They were designed to identify and remove obsolete and old files (those older than 6 months) to free up memory on servers. These scripts were deployed across various server environments, including development, quality assurance, stage, and production servers, covering web servers, application servers, proxy servers, and load balancers. </p>
+									<p>8. I took on the formidable challenge of independently resolving over 900 vulnerabilities in project servers. Despite my limited experience in the realm of security measures, I addressed various issues including bug fixes, server vulnerabilities, and the implementation of third-party signed certificates to ensure secure client-server interactions. Initially hindered by my unfamiliarity with the technology and lack of server access, I collaborated with multiple project teams to secure the necessary permissions and access to databases, servers, and related resources across all environments. My approach involved deep dives into the codebase, extensive online research to understand different vulnerabilities and associated risks, and learning about the importance of signed certificates for enhanced security. I coordinated with a third-party team to obtain and install these certificates, scheduling downtimes in QA, test, and stage environments as required. </p>
+									<p>9. Furthermore, I delved into encryption intricacies and configured Linux servers based on specific encryption requirements. Equipped with this newfound technical knowledge, I successfully remedied the vulnerabilities, significantly bolstering the application's security. Throughout the process of addressing vulnerabilities and risks, I also focused on optimizing the code. This optimization effort included removing redundant sections and unnecessary print statements. Notably, I streamlined a code segment where order types were checked using multiple conditions within if-else statements, consolidating certain conditions and incorporating lambda functions where applicable. Additionally, I replaced instances of "printstack trace" in Java with a logger class, crucial for enhancing code security, given that "printstack trace" displayed sensitive aspects of the code and server. These optimizations led to a more efficient and stable codebase. </p>
+									<p>10. Using Python, DataFrames, Pandas, and Scikit-learn, I analyzed client orders by extracting data from the database and organizing it into Pandas dataframes. These analyses generated valuable insights, identifying prevalent trends like frequently rejected orders, profitable transactions, and popular user preferences. The findings were compiled into a monthly report featuring graphical representations, empowering clients to make strategic decisions for the upcoming quarters. </p>
+									<p>11. I played a role in the development team, focusing on creating the billing module for a node.js microservice-based application. This module was responsible for generating client bills based on their network plans. It processed a JSON file containing plan types and usage data in key-value pairs. Utilizing this information, I implemented the logic to calculate user bills. These calculated results were then sent to another application through a specified endpoint, ensuring seamless communication and accurate billing procedures. </p>
+									<p>12. In my coding practices, I prioritize minimizing the use of print statements and opt for advanced logging tools like Splunk to capture logs, ensuring the code operates smoothly. After application development, I performed application smoke testing and API testing using Apigee and Postman. I meticulously create a comprehensive set of test cases covering various scenarios, ranging from best-case to worst-case scenarios. For testing specific code segments, I evaluate them against each test case. When checking the functionality of specific endpoints, I employ API testing applications such as POSTMAN. Once local testing is complete, I move on to building and deploying the code on the test server. Here, I conduct rigorous smoke testing and API testing to confirm the code's stability. I actively seek out any potential issues the code might encounter in a live test environment, promptly resolving these challenges. After resolving issues, I redeploy the code and conduct thorough testing. This process is repeated for QA and STAGE environments. Only after confirming the code's stability and reliability, I proceed to push the code into the production environment. This meticulous approach ensures that the code is not only reliable but also stable in diverse operational contexts. </p>
+									<div class="content">
+										<ul class="actions">
+											<li><a href="#three" class="button next scrolly">Next</a></li>
+										</ul>
+									</div>
+								</div>
+							</section>
+
+
+						<!-- Three -->
+							<section id="three">
+								<div class="inner">
+									<header class="major">
+										<h2>Skills Acquired</h2>
+									</header>
+									<header class="major">
+										<h4>Incident Management</h4>
+									</header>
+									<p>I have experience in monitoring and resolving incidents and change requests promptly, including diverse issues like user password resets, order placement challenges, and data discrepancies.</p>
+									<header class="major">
+										<h4>Server Administration</h4>
+									</header>
+									<p>I possess server administration skills, including monitoring various server types and environments, analyzing server logs, and taking necessary actions to address errors.</p>
+									<header class="major">
+										<h4>Log Monitoring and Analysis</h4>
+									</header>
+									<p>I have expertise in real-time log monitoring and analysis using tools like Splunk, enabling you to troubleshoot application errors, server malfunctions, and security breaches effectively.</p>
+									<header class="major">
+										<h4>Database Management</h4>
+									</header>
+									<p>My skills include monitoring and managing databases, specifically performing data analysis, identifying problematic entries, and maintaining data accuracy.</p>
+									<header class="major">
+										<h4>Automation</h4>
+									</header>
+									<p>I have developed automated utilities using languages like Python and Java, streamlining tasks related to incident management, data querying, password management, and data comparison, significantly reducing manual intervention and improving efficiency.</p>
+									<header class="major">
+										<h4>Security Management</h4>
+									</header>
+									<p>I have experience in identifying, addressing, and enhancing security vulnerabilities, including bug fixes, server vulnerabilities, and the implementation of third-party signed certificates. This also involves encryption and security best practices.</p>
+									<header class="major">
+										<h4>Data Analysis</h4>
+									</header>
+									<p>I am proficient in data analysis using Python libraries like Pandas and Scikit-learn, to extract insights from large datasets and create visualizations for client reports.</p>
+									<header class="major">
+										<h4>Application Development</h4>
+									</header>
+									<p>You have contributed to the development of modules for microservices-based applications, involving tasks such as billing calculations, data processing, and integration with other applications.</p>
+									<header class="major">
+										<h4>Testing and Quality Assurance</h4>
+									</header>
+									<p>I follow a meticulous approach to software testing, including smoke testing, API testing, and comprehensive test case creation, ensuring the reliability and stability of the code across various environments.</p>
+									<header class="major">
+										<h4>Communication and Collaboration</h4>
+									</header>
+									<p>I have experience collaborating with multiple project teams, securing permissions, and coordinating efforts to address security challenges and implement solutions. Strong communication skills, both written and verbal, are essential in any workplace. Being able to convey ideas clearly and effectively is invaluable.</p>
+									<header class="major">
+										<h4>Documentation</h4>
+									</header>
+									<p>I have the ability to document your work clearly, describing the processes, utilities, and tools I've developed or utilized.</p>
+									<header class="major">
+										<h4>Problem-Solving</h4>
+									</header>
+									<p>My role involves extensive problem-solving, addressing complex issues related to incidents, vulnerabilities, and code optimizations, and showcasing my analytical and critical thinking skills in both in technical and non-technical contexts.</p>
+									<header class="major">
+										<h4>Project Management</h4>
+									</header>
+									<p>I've demonstrated project management skills by ensuring tasks are completed within specified timelines and coordinating activities across different areas of expertise.</p>
+									<header class="major">
+										<h4>Time Management</h4>
+									</header>
+									<p>I have efficiently managed various tasks, ensuring that incidents, change requests, and server-related issues were promptly addressed within Service Level Agreements. My ability to develop and deploy automated utilities, conduct regular database checks, and handle security challenges highlights my excellent time management skills. Additionally, my systematic approach to testing, deployment, and thorough validation across different environments underlines my effective time management, ensuring tasks were completed within specified timelines. My dedication to streamlining processes, reducing manual intervention, and optimizing code further showcases my ability to manage time and resources effectively.</p>
+
+
+
+
+									<ul class="actions">
+										<li><a href="projects.html" class="button next">Back</a></li>
+									</ul>
+								</div>
+							</section>
+
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<div class="inner">
+							<ul class="icons">
+								<li><a href="https://github.com/KedarGitHub" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+								<li><a href="https://www.linkedin.com/in/kedar-amar-nayak-67574193/" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+								<li><a href="https://www.kaggle.com/unbrokeneleven" class="icon brands alt fa-kaggle"><span class="label">Kaggle</span></a></li>
+								<li><a href="https://leetcode.com/kedarnayak1106/" class="icon brands alt fa-python"><span class="label">LeetCode</span></a></li>
+							</ul>
+						</div>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

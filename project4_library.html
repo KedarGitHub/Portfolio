@@ -1,0 +1,456 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Library Management System</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+				<!-- Note: The "styleN" class below should match that of the banner element. -->
+					<header id="header" class="alt style2">
+						<a href="index.html" class="logo"><strong>My Portfolio</strong> <span>By Kedar Amar Nayak</span></a>
+						<nav>
+							<a href="#menu">Menu</a>
+						</nav>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<ul class="links">
+							<li><a href="index.html">Home</a></li>
+							<li><a href="projects.html">Projects</a></li>
+							<li><a href="education.html">Education</a></li>
+							<li><a href="awards.html">Awards and Extra Curricular</a></li>
+							<li><a href="cover.html">Cover Letter</a></li>
+							<!-- <li><a href="connect.html">Let's Connect</a></li> -->
+						</ul>
+					</nav>
+
+				<!-- Banner -->
+				<!-- Note: The "styleN" class below should match that of the header element. -->
+					<section id="banner" class="style2">
+						<div class="inner">
+							<span class="image">
+								<img src="images/pic07.jpg" alt="" />
+							</span>
+							<header class="major">
+								<h1>Library Management System</h1>
+							</header>
+							<div class="content">
+								<ul class="actions">
+									<li><a href="#one" class="button next scrolly">Get Started</a></li>
+								</ul>
+							</div>
+						</div>
+					</section>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- One -->
+							<section id="one">
+								<div class="inner">
+									<header class="major">
+										<h2>Introduction</h2>
+									</header>
+									<p>This project focuses on developing a comprehensive library management system that aims to streamline operations and eliminate manual efforts associated with managing physical inventory. The primary goal is to collect and store data related to books, library visitors, new book additions, customer rewards, and overall library management, all implemented using SQL. By creating a robust database, the project addresses challenges such as handling book transactions, collecting fines, and enhancing the efficiency of the library's operations.<br/><br/>
+
+										The schema and tables used in the database have been meticulously defined to support various functionalities. The advantages of utilizing a database over traditional Excel files are noteworthy. Databases can handle large volumes of data, offering storage capabilities up to 1 GB per field and 32 TB per relation, whereas Excel tends to crash beyond 1 million rows. Furthermore, databases allow concurrent access by multiple users and enable security features such as row-level or column-level access control. This ensures data privacy and restricts sensitive information modification to authorized personnel only.<br/><br/>
+										
+										The target users for this project include library staff, local residents, and book procurement shops. For instance, considering the case of the UB Library, which comprises multiple branches, the current system lacks cross-functionality. Users must physically visit specific branches to search for books, leading to inefficiencies. With this project, users can seamlessly search for books across all library locations, eliminating the need for physical presence. This user-friendly approach saves time for both students and staff, promoting a hassle-free experience.</p>
+									
+									<div class="content">
+										<ul class="actions">
+											<li><a href="#two" class="button next scrolly">Next</a></li>
+										</ul>
+									</div>
+								</div>
+							</section>
+
+						<!-- Tw0 -->
+						<section id="two">
+							<div class="inner">
+								<header class="major">
+									<h2>Database Design</h2>
+								</header>
+								<p>In this project, a database comprising nine tables has been established. The attributes, along with their corresponding data types, purposes, and descriptions, are provided below.</p>
+								<a href="https://www.buffalo.edu/">
+									<span class="image main"><img src="images/library_db_design.jpg" alt="" /></span>
+								</a>
+								<a href="https://www.buffalo.edu/">
+									<span class="image main"><img src="images/library_db_design2.jpg" alt="" /></span>
+								</a>
+								<div class="content">
+									<ul class="actions">
+										<li><a href="#three" class="button next scrolly">Next</a></li>
+									</ul>
+								</div>
+							</div>
+						</section>
+
+						<!-- Three -->
+						<section id="three">
+							<div class="inner">
+								<header class="major">
+									<h2>ER Diagram</h2>
+								</header>
+								<p>The ER diagram of the database is illustrated as follows</p>
+								<a href="https://www.buffalo.edu/">
+									<span class="image main"><img src="images/library_er.jpg" alt="" /></span>
+								</a>
+								<div class="content">
+									<ul class="actions">
+										<li><a href="#four" class="button next scrolly">Next</a></li>
+									</ul>
+								</div>
+							</div>
+						</section>
+
+						<!-- Four -->
+						<section id="four">
+							<div class="inner">
+								<header class="major">
+									<h2>Creating Data and Inserting Records</h2>
+								</header>
+								<p>In this project, I employed a Python script utilizing the Faker library to generate custom data. The generated data was stored in lists and sets, which were subsequently used to create .csv files through another Python script. The resulting .csv files included the below. <br/><br/>
+
+									author.csv<br/>
+									Book.csv<br/>
+									book_author_relation.csv<br/>
+									book_category_relation.csv<br/>
+									book_copy.csv<br/>
+									book_type.csv<br/>
+									Category.csv<br/>
+									Customer.csv<br/>
+									checkout.csv<br/><br/>
+									
+									Following the creation of these .csv files, I utilized a Python script to insert the data into the PostgreSQL database.</p>
+								<div class="content">
+									<ul class="actions">
+										<li><a href="#five" class="button next scrolly">Next</a></li>
+									</ul>
+								</div>
+							</div>
+						</section>
+
+						<!-- five -->
+						<section id="five">
+							<div class="inner">
+								<header class="major">
+									<h2>Relations</h2>
+								</header>
+								<p>The images below provide the table structure for all the database tables, including the total number of rows.</p>
+								<header class="major">
+									<h4>Author relation:</h4>
+								</header>
+								<a href="https://www.buffalo.edu/">
+									<span class="image main" style="max-width: 30%;"><img src="images/table1.jpg" alt="" /></span>
+								</a>
+								<header class="major">
+									<h4>Category relation:</h4>
+								</header>
+								<a href="https://www.buffalo.edu/">
+									<span class="image main" style="max-width: 30%;"><img src="images/table2.jpg" alt="" /></span>
+								</a>
+								<header class="major">
+									<h4>Customer Relation:</h4>
+								</header>
+								<a href="https://www.buffalo.edu/">
+									<span class="image main" ><img src="images/table3.jpg" alt="" /></span>
+								</a>
+								<header class="major">
+									<h4>Book Type Relation</h4>
+								</header>
+								<a href="https://www.buffalo.edu/">
+									<span class="image main" style="max-width: 30%;"><img src="images/table4.jpg" alt="" /></span>
+								</a>
+								<header class="major">
+									<h4>Book relation</h4>
+								</header>
+								<a href="https://www.buffalo.edu/">
+									<span class="image main" style="max-width: 50%;"><img src="images/table5.jpg" alt="" /></span>
+								</a>
+								<header class="major">
+									<h4>Book Copy Relation</h4>
+								</header>
+								<a href="https://www.buffalo.edu/">
+									<span class="image main" style="max-width: 50%;"><img src="images/table6.jpg" alt="" /></span>
+								</a>
+								<header class="major">
+									<h4>Book Category Relation</h4>
+								</header>
+								<a href="https://www.buffalo.edu/">
+									<span class="image main" style="max-width: 30%;"><img src="images/table7.jpg" alt="" /></span>
+								</a>
+								<header class="major">
+									<h4>Book Author Relation</h4>
+								</header>
+								<a href="https://www.buffalo.edu/">
+									<span class="image main" style="max-width: 30%;"><img src="images/table8.jpg" alt="" /></span>
+								</a>
+								<header class="major">
+									<h4>Checkout Relation</h4>
+								</header>
+								<a href="https://www.buffalo.edu/">
+									<span class="image main"><img src="images/table9.jpg" alt="" /></span>
+								</a>
+								<div class="content">
+									<ul class="actions">
+										<li><a href="#six" class="button next scrolly">Next</a></li>
+									</ul>
+								</div>
+							</div>
+						</section>
+
+						<!-- Six -->
+						<section id="six">
+							<div class="inner">
+								<header class="major">
+									<h2>Foreign Key Deletion Scenarios - Possibility and Removal</h2>
+								</header>
+								<p>1. The association between the 'book_author_relation' table and the 'author' table, as well as the 'book' table, signifies that the primary keys ('author_id' in the 'author' table and the primary key of the 'book' table) can only be removed after eliminating this association table initially.<br/><br/>
+
+									2. The relationship established by the 'book_category_relation' table between the 'category' table and the 'book' table implies that the primary keys ('category_id' in the 'category' table and the primary key of the 'book' table) can only be removed after dropping this association table.<br/><br/>
+									
+									3. In the 'checkout' table, the foreign keys 'unique_book_id' and 'customer_id_card_number' are utilized. Consequently, to delete the primary keys ('customer_id_card_number' in the 'customer' table and the primary key of the 'book_copy' table, which is 'unique_book_id'), it is necessary to first drop the 'checkout' table. Only then can the primary keys of the referenced tables be removed.<br/><br/>
+									
+									4. The 'book' table employs 'book_type_id' as a foreign key referencing the 'book_type' table. To eliminate the primary key ('book_type_id') of the 'book_type' table, it is imperative to drop the 'book' table first.<br/><br/>
+									
+									5. Similarly, the 'book_copy' table uses 'book_id' as a foreign key referencing the 'book' table. Consequently, to remove the primary key ('book_id') of the 'book' table, the 'book_copy' table must be dropped beforehand.</p>
+								<div class="content">
+									<ul class="actions">
+										<li><a href="#seven" class="button next scrolly">Next</a></li>
+									</ul>
+								</div>
+							</div>
+						</section>
+
+						<!-- Seven -->
+						<section id="seven">
+							<div class="inner">
+								<header class="major">
+									<h2>Normalization</h2>
+								</header>
+								<p>Normalization is a fundamental database design method that focuses on reducing data redundancy and eliminating problems like Insertion, Update, and Deletion Anomalies. It achieves this by breaking down larger tables into smaller ones and creating relationships between them. The objective of normalization in SQL is to eradicate duplicated data and ensure the logical storage of information. Following normalization rules enables more efficient organization of databases and ensures data integrity.</p>
+								<header class="major">
+									<h4>Boyce Codd Normal Form</h4>
+								</header>
+								<p>BCNF and 3NF stand as vital normalization techniques in database design, serving to eradicate data redundancy and enhance data integrity. BCNF relies on functional dependencies, which denote relationships among attributes within a relation. Its objective is to eliminate non-trivial functional dependencies by ensuring each determinant is a candidate key. BCNF preserves all functional dependencies and decomposes relations into separate tables based on determinants. On the other hand, 3NF concentrates on functional dependencies, particularly targeting transitive dependencies. Its aim is to remove instances where an attribute relies on another attribute through a third one, thereby reducing data redundancy by breaking down relations into smaller tables.
+								<p>All tables adhere to BCNF because the primary key uniquely determines all other attributes. Regarding 3NF, the tables are already in this form since there are no transitive dependencies.</p>
+								<div class="content">
+									<ul class="actions">
+										<li><a href="#eight" class="button next scrolly">Next</a></li>
+									</ul>
+								</div>
+							</div>
+						</section>
+
+						<!-- Eight -->
+						<section id="eight">
+							<div class="inner">
+								<header class="major">
+									<h2>Query Optimization</h2>
+								</header>
+								<p>Query optimization in SQL is an ongoing process aimed at enhancing query performance by reducing execution time, minimizing disk accesses, and optimizing various cost-related factors. Efficient data access is vital for applications as it directly impacts user experience. The goal is to retrieve data swiftly, ensuring a seamless and responsive application experience.</p>
+								<p>The necessity for query optimization arises due to several factors:<br/><br/>
+
+								1. Improved Performance: Optimization of the execution plan enhances the performance of database queries, resulting in faster response times and overall system efficiency.<br/><br/>
+								
+								2. Efficient Resource Usage: Optimized queries consume fewer system resources such as CPU, memory, and disk I/O. This efficient resource utilization allows the system to handle more concurrent queries without performance bottlenecks.<br/><br/>
+									
+								3. Scalability: Query optimization becomes crucial as data volume and user access increase. Optimized queries ensure effective system scaling and enable handling larger workloads without significant performance degradation.<br/><br/>
+									
+								4. Cost Savings: Query optimization reduces the cost of executing queries by minimizing disk I/O operations and optimizing resource usage. This leads to savings in hardware costs and enhances the efficiency of the database system.<br/><br/>
+									
+								5. Enhanced User Experience: Faster query response times and improved system performance contribute to a better user experience. Applications that deliver quick and responsive results are more likely to satisfy users and maintain their engagement.<br/><br/>
+									
+								6. SLA Compliance: Query optimization helps meet service level agreements (SLAs) by ensuring that the database system adheres to agreed-upon performance standards and response time requirements.</p>
+								<div class="content">
+									<ul class="actions">
+										<li><a href="#nine" class="button next scrolly">Next</a></li>
+									</ul>
+								</div>
+							</div>
+						</section>
+								
+						<!-- Nine -->
+						<section id="nine">
+							<div class="inner">
+								<header class="major">
+									<h2>Implementation</h2>
+								</header>
+								<p>To optimize queries, two indexing methods, namely B-tree indexing and hash indexing, have been implemented.B-tree indexing organizes data in a balanced tree structure, sorted in ascending or descending order. It efficiently handles duplicate keys by storing them in a sorted manner. This method is optimized for disk access, making it suitable for scenarios where data is stored on disk.On the other hand, hash indexing utilizes a hash function to compute the storage location of data directly. This method is ideal for exact match lookups and is primarily optimized for in-memory data access.</p>
+
+								<header class="major">
+									<h4>Using B-tree indexing</h4>
+								</header>
+								<p>The selection of entries from the Customer table based on customer status and age has been optimized using indexing. Initially, without the index, Postgres performed a sequential scan, taking 4.863 ms to execute the query. After implementing a B-tree index named 'index_customer_id' on the 'customer_id_card_number' column, the execution time for the same query reduced to 4.275 ms, resulting in an optimization of 0.588 ms.</p>
+								<header class="major">
+									<h4>Before Indexing</h4>
+								</header>
+								<a href="https://www.buffalo.edu/">
+									<span class="image main" style="max-width: 80%;"><img src="images/beforeindex.jpg" alt="" /></span>
+								</a>
+								<a href="https://www.buffalo.edu/">
+									<span class="image main" style="max-width: 80%;"><img src="images/beforeindex1.jpg" alt="" /></span>
+								</a>
+								<header class="major">
+									<h4>After Indexing</h4>
+								</header>
+								<a href="https://www.buffalo.edu/">
+									<span class="image main" style="max-width: 80%;"><img src="images/afterindex.jpg" alt="" /></span>
+								</a>
+								<a href="https://www.buffalo.edu/">
+									<span class="image main" style="max-width: 80%;"><img src="images/afterindex2.jpg" alt="" /></span>
+								</a>
+
+								<header class="major">
+									<h4>Using hash indexing</h4>
+								</header>
+								<p>The query to calculate the total number of books in each category, along with the average and maximum prices, has been optimized using indexing. Initially, without the index, Postgres performed a sequential scan, taking 1524.522 ms to execute the query. After implementing a hash index 'ind1' on the 'book_id' column of the book table and a hash index 'ind2' on the 'category_name' column of the category table, the execution time for the same query reduced to 1326.997 ms, optimizing the query by 197.525 ms.</p>
+								<header class="major">
+									<h4>Before Indexing</h4>
+								</header>
+								<a href="https://www.buffalo.edu/">
+									<span class="image main" style="max-width: 80%;"><img src="images/beforehash.jpg" alt="" /></span>
+								</a>
+								<a href="https://www.buffalo.edu/">
+									<span class="image main" style="max-width: 80%;"><img src="images/beforehash1.jpg" alt="" /></span>
+								</a>
+								<header class="major">
+									<h4>After Indexing</h4>
+								</header>
+								<a href="https://www.buffalo.edu/">
+									<span class="image main" style="max-width: 80%;"><img src="images/afterhash.jpg" alt="" /></span>
+								</a>
+								<a href="https://www.buffalo.edu/">
+									<span class="image main" style="max-width: 80%;"><img src="images/afterhash1.jpg" alt="" /></span>
+								</a>
+
+								<div class="content">
+									<ul class="actions">
+										<li><a href="#ten" class="button next scrolly">Next</a></li>
+									</ul>
+								</div>
+							</div>
+						</section>
+
+						<!-- Ten -->
+						<section id="ten">
+							<div class="inner">
+								<header class="major">
+									<h2>Triggers and functions</h2>
+								</header>
+								<p>Triggers and functions serve as powerful tools in database systems, enabling the automation, validation, and customization of data processing tasks, thus enhancing data management and processing efficiency.<br/><br/>
+
+									Triggers, associated with a table, automatically respond to specific events such as data insertions, updates, or deletions. They enforce constraints, validate data, audit changes, and initiate actions based on conditions. Triggers can execute before or after events, ensuring data integrity and consistency. Implemented using SQL statements, they allow for intricate logic to enforce business rules.<br/><br/>
+									
+									Functions, on the other hand, are named blocks of code used in databases to perform specific tasks, return values, or execute actions. They encapsulate reusable logic, accept input parameters, and can be written in various programming languages. Functions enhance code reuse, modularity, and maintainability by encapsulating complex logic into reusable units. They find application in queries, stored procedures, triggers, and other database objects, performing calculations, data transformations, or complex operations.<br/><br/>
+									
+									For instance, a trigger has been created for the checkout table. The trigger function 'calculate_fine()' is invoked after an insertion in the checkout table. This function updates the 'fine' column for the newly inserted row by calculating the fine amount, which is 5% of the book's price per day. The trigger and function collaboratively work to automatically calculate and assign a fine value for each new record in the checkout table. When triggered, the function determines the fine based on the actual due date and return date of the new record. This calculated fine is then stored as the specific record's fine value. This streamlined process ensures automatic generation and assignment of fines, eliminating the need for manual intervention.</p>
+
+								<header class="major">
+									<h4>Trigger Function for Checkout Table</h4>
+								</header>
+								<a href="https://www.buffalo.edu/">
+									<span class="image main" style="max-width: 80%;"><img src="images/trigger1.jpg" alt="" /></span>
+								</a>
+								<header class="major">
+									<h4>Records in the Checkout Table before inserting</h4>
+								</header>
+								<a href="https://www.buffalo.edu/">
+									<span class="image main" style="max-width: 80%;"><img src="images/trigger2.jpg" alt="" /></span>
+								</a>
+
+								<header class="major">
+									<h4>Inserting an Entry in the Checkout Table and Retrieving the Entries</h4>
+								</header>
+								<a href="https://www.buffalo.edu/">
+									<span class="image main" style="max-width: 80%;"><img src="images/trigger4.jpg" alt="" /></span>
+								</a>
+								<p>The fine is inserted as null value for the checkout_id 23065.</p>
+								<header class="major">
+									<h4>Records in the Checkout Table after insertion</h4>
+								</header>
+								<a href="https://www.buffalo.edu/">
+									<span class="image main" style="max-width: 80%;"><img src="images/trigger3.jpg" alt="" /></span>
+								</a>
+								<p>The trigger and function have computed and recorded a fine of 3.1673476807580427 for the recently added entry with checkout ID 23065.</p>
+
+								<div class="content">
+									<ul class="actions">
+										<li><a href="#eleven" class="button next scrolly">Next</a></li>
+									</ul>
+								</div>
+							</div>
+						</section>
+
+						<!-- Eleven -->
+						<section id="eleven">
+							<div class="inner">
+								<header class="major">
+									<h2>User Interface</h2>
+								</header>
+								<p>The project includes a web interface that centralizes all library data, presenting it in a user-friendly format. At present, it's deployed on a local server and designed for easy scalability, making it adaptable for large-scale environments. Currently, the website features information about authors, books, and the available number of book copies in the library. There are plans to expand its capabilities to showcase various other data relevant to different use cases. Please note that the website was hosted locally.</p>
+
+								<header class="major">
+									<h4>UI</h4>
+								</header>
+								<a href="https://www.buffalo.edu/">
+									<span class="image main" style="max-width: 80%;"><img src="images/db_ui.jpg" alt="" /></span>
+								</a>
+
+								<a href="https://www.buffalo.edu/">
+									<span class="image main" style="max-width: 80%;"><img src="images/db_ui1.jpg" alt="" /></span>
+								</a>
+
+								<a href="https://www.buffalo.edu/">
+									<span class="image main" style="max-width: 80%;"><img src="images/db_ui2.jpg" alt="" /></span>
+								</a>
+							</div>
+						</section>
+
+						<!-- Three -->
+							<section id="three">
+								<div class="inner">
+									<ul class="actions">
+										<li><a href="projects.html" class="button next">Back</a></li>
+									</ul>
+								</div>
+							</section>
+
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<div class="inner">
+							<ul class="icons">
+								<li><a href="https://github.com/KedarGitHub" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+								<li><a href="https://www.linkedin.com/in/kedar-amar-nayak-67574193/" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+								<li><a href="https://www.kaggle.com/unbrokeneleven" class="icon brands alt fa-kaggle"><span class="label">Kaggle</span></a></li>
+								<li><a href="https://leetcode.com/kedarnayak1106/" class="icon brands alt fa-python"><span class="label">LeetCode</span></a></li>
+							</ul>
+						</div>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
